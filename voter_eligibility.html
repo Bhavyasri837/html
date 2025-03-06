@@ -1,0 +1,26 @@
+<!--voter eligibility-->
+<!doctype html>
+<html>
+    <head>
+        <title>
+            verifying the eligibility of a voter
+        </title>
+    </head>
+    <body>
+        <h2 align="center">
+            verify the eligibility of a voter
+        </h2>
+        <script>
+            let name=prompt("enter your name");
+            let age=parseInt(prompt("enter your age"));
+            document.write("<table align='center' width=25% border=1><tr><th colspan=2><h3 style='colour:seagreen'> voters eligibility </h3></th></tr>");
+            document.write("<tr><th>voter name</th><td>"+name+"</td></tr>");
+            document.write("<tr><th>age</th><td>"+age+"</td></tr>");
+            document.write("<tr><th>eligibility</th>");
+            if(age>18)
+                document.write("<td>yes</td>");
+            else
+                document.write("<td>no</td><tr></table>")
+        </script>
+    </body>
+</html>
