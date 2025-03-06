@@ -1,0 +1,34 @@
+<!--demonstrating accepting input through javascript-->
+<!doctype html>
+<html>
+    <head>
+        <title>
+            accepting input
+        </title>
+        <script>
+            let a,b,c;
+            a=parseInt(prompt("enter an integer to be added",0));
+            b=parseInt(prompt("enter another integer to be added",0));
+            c=a+b;
+            alert(c);
+            function findsum()
+            {
+                let fv=parseInt(document.getElementById("txfv").value);
+                let sv=parseInt(document.getElementById("txtsv").value);
+                alert(fv+sv);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>
+            demonstrating input methods
+        </h1>
+        <from>
+            <input type="text" id="txfv" name="txtfv"/>
+            <input type="text" id="txtsv" name="txtsv"/>
+            <button onclick="findsum()">
+                add
+            </button>
+        </from>
+    </body>
+</html>
