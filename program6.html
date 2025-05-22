@@ -1,0 +1,20 @@
+let n=parseInt(prompt("enter number of students:"))
+let i
+for(i=1;i<=n;i++)
+    {
+let name=prompt("enter a student name:");
+let sub1=parseInt(prompt("enter marks in subject1"));
+let sub2=parseInt(prompt("enter marks in subject2"));
+let sub3=parseInt(prompt("enter marks in subject3"));
+let sub4=parseInt(prompt("enter marks in subject4"));
+let sub5=parseInt(prompt("enter marks in subject5"));
+let avg=(sub1+sub2+sub3+sub4+sub5)/5
+if(avg>=75&&avg<=100)
+    console.log(name+" :"+"A grade");
+else if(avg<75&&avg>=45)
+    console.log(name+": b grade");
+else if(avg<45&&avg>=35)
+    console.log(name+": c grade");
+else
+    console.log(name+" : Fail");
+    }
