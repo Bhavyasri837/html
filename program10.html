@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 20px;
+            }
+            h1 {
+                text-align: center;
+                color: #333;
+            }
+            .container {
+                max-width: 400px;
+                margin: auto;
+                background: white;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            }
+            input[type="text"],
+            input[type="number"] {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            button {
+                width: 100%;
+                padding: 10px;
+                background-color: #28a745;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+            button:hover {
+                background-color: #218838;
+            }
+            p {
+                text-align: center;
+                font-size: 18px;
+                color: #333;
+            }
+        </style>
+        <script>
+            function a() {
+                let x = document.getElementById("stn").value;
+                let a = parseInt(document.getElementById("s1").value);
+                let b = parseInt(document.getElementById("s2").value);
+                let c = parseInt(document.getElementById("s3").value);
+                let d = parseInt(document.getElementById("s4").value);
+                let e = parseInt(document.getElementById("s5").value);
+                let av = (a + b + c + d + e) / 5;
+                document.getElementById("avg").innerHTML = "Student Name: " + x + " | Average: " + av.toFixed(2);
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Calculate Average</h1>
+            Student Name: <input type="text" id="stn"><br>
+            Subject 1 Marks: <input type="number" id="s1"><br>
+            Subject 2 Marks: <input type="number" id="s2"><br>
+            Subject 3 Marks: <input type="number" id="s3"><br>
+            Subject 4 Marks: <input type="number" id="s4"><br>
+            Subject 5 Marks: <input type="number" id="s5"><br>
+            <button onclick="a()">Calculate Average</button>
+            <p id="avg"></p>
+        </div>
+    </body>
+</html>
