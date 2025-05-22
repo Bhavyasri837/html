@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f0;
+                text-align: center;
+                padding: 20px;
+            }
+
+            button {
+                background-color: #4CAF50; /* Green */
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+
+            button:hover {
+                background-color: red; /* Darker green */
+            }
+
+            h1 {
+                color: #333;
+                font-size: 24px;
+                margin-top: 20px;
+            }
+        </style>
+        <script>
+            function m() {
+                document.getElementById('a').innerHTML = "lord parameshwar";
+            }
+            function t() {
+                document.getElementById('a').innerHTML = "lord hanuman";
+            }
+            function w() {
+                document.getElementById('a').innerHTML = "lord Sree krishna";
+            }
+            function th() {
+                document.getElementById('a').innerHTML = "lord saibaba";
+            }
+            function f() {
+                document.getElementById('a').innerHTML = "goddess mahalakshmi";
+            }
+            function s() {
+                document.getElementById('a').innerHTML = "lord venkateswara";
+            }
+            function su() {
+                document.getElementById('a').innerHTML = "lord suryadev";
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="m()">Monday</button>
+        <button onclick="t()">Tuesday</button>
+        <button onclick="w()">Wednesday</button>
+        <button onclick="th()">Thursday</button>
+        <button onclick="f()">Friday</button>
+        <button onclick="s()">Saturday</button>
+        <button onclick="su()">Sunday</button>
+        <h1 id="a"></h1>
+    </body>
+</html>
