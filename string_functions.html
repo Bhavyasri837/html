@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script>
+            function a()
+            {
+                var str=document.getElementById("a").value;
+                document.write(str.toUpperCase(),"<br>");
+                document.write(str.toLowerCase(),"<br>");
+                document.write(str.includes("sri"),"<br>");
+                document.write(str.length,"<br>");
+                document.write(str.charAt(4),"<br>");
+                document.write(str.indexOf('y'),"<br>");
+                document.write(str.replace('b','d'),"<br>");
+                document.write(str.split(" "),"<br>");
+            }
+        </script>
+    </head>
+    <body>
+        enter string:<input type="text" id="a">
+        <button onclick="a()">click me to see output</button>
+    </body>
+</html>
