@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            function a()
+            {
+                var x=parseInt(document.getElementById("r").value);
+                for(var i=0;i<x;i++)
+            {
+                document.writeln(i+" <br>");
+            }
+            }
+        </script>
+    </head>
+    <body>
+       enter number to show the output: <input type="text" id="r" /><br><br>
+       <button onclick="a()">click me to run the code</button>
+        <p id="r"></p>
+    </body>
+</html>

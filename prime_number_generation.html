@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number Input Example</title>
+    <script>
+        function a() {
+            var x = document.getElementById("myInput1").value;
+            var y = document.getElementById("myInput2").value;
+
+            if (x === "" || y === "") {
+                alert("Please enter both the values");
+                return;
+            }
+
+            x = Number(x);
+            y = Number(y);
+
+            alert("x = " + x + ", y = " + y);
+        }
+    </script>
+</head>
+<body>
+    <label>Enter first number: </label>
+    <input type="text" id="myInput1"><br><br>
+    
+    <label>Enter second number: </label>
+    <input type="text" id="myInput2"><br><br>
+    
+    <button onclick="a()">Submit</button>
+</body>
+</html>
